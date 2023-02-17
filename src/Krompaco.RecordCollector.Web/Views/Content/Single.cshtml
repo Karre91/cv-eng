@@ -1,0 +1,23 @@
+﻿@using Krompaco.RecordCollector.Content.Models
+@using Markdig
+@model SinglePageViewModel
+
+@section head {
+	<link rel="canonical" href="@Model.ContentProperties?.SiteUrl.TrimEnd('/')@(Model.CurrentPage?.RelativeUrl)" />
+}
+
+<h1>SINGLE</h1>
+<div>
+    <div class="background"></div>
+   <div class="foreground">
+        <br /><br />
+        <h1>LIST</h1>
+        <br /><br />
+    </div>
+</div>
+			@Html.Raw(Markdown.ToHtml(Model.CurrentPage?.Content ?? string.Empty, Model.MarkdownPipeline))
+	
+			@Html.Raw(Model.CurrentPage?.Content ?? string.Empty)
+
+
+	@await Html.PartialAsync("SingleData", Model.CurrentPage, new ViewDataDictionary(ViewData) { { "FrontendSetup", Model.ContentProperties?.FrontendSetup ?? string.Empty } })

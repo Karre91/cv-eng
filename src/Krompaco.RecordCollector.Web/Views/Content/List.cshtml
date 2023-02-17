@@ -1,0 +1,33 @@
+﻿@using Krompaco.RecordCollector.Content.Models
+@using Krompaco.RecordCollector.Web.Extensions
+@using Markdig
+@using System.Globalization
+
+@model ListPageViewModel
+
+@{
+    var linkClasses1 = "rc-link";
+    var h1Shown = false;
+    var isRootWithCultureSelection = Model.RootCultures?.Count > 0 && Model.CurrentPath == "/";
+}
+
+@section head {
+    @if (Model.PagedDescendantPages?.Count > 0)
+    {
+        <link rel="alternate" type="application/rss+xml" title="@Model.Title" href="@Model.ContentProperties.SiteUrl.TrimEnd('/')@(Model.CurrentPage?.RelativeUrl)rss.xml" />
+    }
+    <link rel="canonical" href="@Model.ContentProperties.SiteUrl.TrimEnd('/')@(Model.CurrentPage?.RelativeUrl)" />
+}
+
+<div>
+    <h1>@Model.Title</h1>
+    <div class="background"></div>
+    <div class="foreground">
+        <div class="content">
+            @Html.Raw(Model.CurrentPage?.Content)
+            <br /><br />
+        </div>
+    </div>
+</div>
+
+
