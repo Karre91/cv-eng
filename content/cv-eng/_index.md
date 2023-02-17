@@ -7,4 +7,4 @@ robots = "noindex"
 <h2>Hi!</h2>
 <br>
 I'm Karin Eurenius<br>
-A newly graduated .NET systemdeveloper!
+A newly graduated .NET systemdeveloper! 
