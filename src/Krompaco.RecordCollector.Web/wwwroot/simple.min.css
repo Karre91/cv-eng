@@ -1,3 +1,4 @@
+
 :root {
 	--sans-font: Manrope,-apple-system,BlinkMacSystemFont,"Avenir Next",Avenir,"Nimbus Sans L",Roboto,Noto,"Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
 	--mono-font: Consolas,Menlo,Monaco,"Andale Mono","Ubuntu Mono",monospace;
@@ -128,14 +129,14 @@ html {
 
 
 
-/*@font-face {
+@font-face {
 	font-named-instance: "Regular";
 	font-display: swap;
 	font-family: Manrope;
 	font-style: normal;
 	font-weight: 100 900;
-	src: url(/dist/manrope-wght.woff2) format("woff2")
-}*/
+	src: url(./simple.min.css) format("woff2")
+}
 
 /*@media (prefers-color-scheme:dark) {
 	:root {
