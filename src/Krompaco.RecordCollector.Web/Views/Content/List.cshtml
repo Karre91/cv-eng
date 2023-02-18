@@ -1,15 +1,11 @@
 ﻿@using Krompaco.RecordCollector.Content.Models
-@using Krompaco.RecordCollector.Web.Extensions
+@*@using Krompaco.RecordCollector.Web.Extensions*@
 @using Markdig
-@using System.Globalization
+@*@using System.Globalization*@
 
 @model ListPageViewModel
 
-@{
-    var linkClasses1 = "rc-link";
-    var h1Shown = false;
-    var isRootWithCultureSelection = Model.RootCultures?.Count > 0 && Model.CurrentPath == "/";
-}
+
 
 @section head {
     @if (Model.PagedDescendantPages?.Count > 0)
@@ -20,13 +16,25 @@
 }
 
 <div>
-    <h1>@Model.Title</h1>
-    <div class="background"></div>
-    <div class="foreground">
-        <div class="content">
-            @Html.Raw(Model.CurrentPage?.Content)
-        </div>
+    <div style="filter: blur(1px);"></div>
+    <div style="backdrop-filter: blur(5px);	min-height: 50px;	max-height: 100vh;">
+     
+            PORTFOLIO
+
+
+        Hi!
+
+        I'm Karin Eurenius.
+        A newly graduated .NET systemdeveloper!
+
+
+
+        </p>
+        <br /><br /><br /><br /><br />
+
     </div>
 </div>
 
+@*<p>@Html.Raw(Model.CurrentPage?.Content)</p>
+*@
 

@@ -27,16 +27,17 @@
     <header>
         <nav aria-label="@Model.Localizer["Main navigation"]">
             <a href="/" aria-current="page"><b>@Model.Localizer["HOME"]</b></a>
-            <a href="/about" aria-current="page"><b>@Model.Localizer["ABOUT"]</b></a>
+            <a href="/about" aria-current="page"><b>@Model.Localizer["ABOUT ME"]</b></a>
             <a href="/education" aria-current="page"><b>@Model.Localizer["EDUCATION"]</b></a>
-            <a href="/studies" aria-current="page"><b>@Model.Localizer["STUDIES"]</b></a>
+            <a href="/studies" aria-current="page"><b>@Model.Localizer["WORK"]</b></a>
+            <a href="/studies" aria-current="page"><b>@Model.Localizer["CONTACT"]</b></a>
         </nav>
 
     </header>
     <div class="container">
-    <main id="main">
-        @RenderBody()
-    </main>
+        <main id="main">
+            @RenderBody()
+        </main>
     </div>
 
     <footer>
