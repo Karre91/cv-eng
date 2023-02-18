@@ -23,7 +23,9 @@
 	min-height: 50px;
 	max-height: 100vh;
 }
-
+div{
+	border:solid;
+}
 header > nav {
 	font-size: 1rem;
 	line-height: 2;
@@ -33,7 +35,7 @@ header > nav {
 	header > nav ol, header > nav ul {
 		align-content: space-around;
 		align-items: center;
-		display: flex;
+		/*display: flex;*/
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -43,7 +45,7 @@ header > nav {
 	}
 
 		header > nav ol li, header > nav ul li {
-			display: inline-block
+			/*display: inline-block*/
 		}
 
 	header > nav a, header > nav a:visited {
