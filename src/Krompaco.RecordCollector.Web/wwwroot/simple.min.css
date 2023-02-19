@@ -14,7 +14,14 @@
 	--marked: #ffdd33;
 	--disabled: #efefef*/
 }
-
+#Scenter{
+	text-align: center;
+}
+#img-karin{
+	width: 20%;
+	border: double;
+	border-radius: 10%;
+}
 
 header > nav {
 	font-size: 1rem;
@@ -159,11 +166,18 @@ input, progress, select, textarea {
 
 
 
+p{
+	display:flex;
+}
 
-	
+div{
+	display: flex;
+}
 
 h1 {
-	font-size: 3rem
+	font-size: 3rem;
+	display:inline-block;
+	text-align: center;
 }
 
 /*h2 {
@@ -186,13 +200,10 @@ h5 {
 
 h6 {
 	font-size: .96rem
-}
+}*/
 
-h1, h2, h3, h4, h5, h6, p {
-	overflow-wrap: break-word
-}
 
-h1, h2, h3 {
+/*h1, h2, h3 {
 	line-height: 1.1
 }
 
