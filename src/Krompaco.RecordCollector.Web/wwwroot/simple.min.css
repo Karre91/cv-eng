@@ -1,3 +1,4 @@
+
 :root {
 	--sans-font: Manrope,-apple-system,BlinkMacSystemFont,"Avenir Next",Avenir,"Nimbus Sans L",Roboto,Noto,"Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
 	--mono-font: Consolas,Menlo,Monaco,"Andale Mono","Ubuntu Mono",monospace;
@@ -13,15 +14,13 @@
 	--marked: #ffdd33;
 	--disabled: #efefef*/
 }
-
-.background {
-	filter: blur(1px);
+#Scenter{
+	text-align: center;
 }
-
-.foreground {
-	backdrop-filter: blur(5px);
-	min-height: 50px;
-	max-height: 100vh;
+#img-karin{
+	width: 20%;
+	border: double;
+	border-radius: 10%;
 }
 
 header > nav {
@@ -33,7 +32,7 @@ header > nav {
 	header > nav ol, header > nav ul {
 		align-content: space-around;
 		align-items: center;
-		display: flex;
+		/*display: flex;*/
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -43,7 +42,7 @@ header > nav {
 	}
 
 		header > nav ol li, header > nav ul li {
-			display: inline-block
+			/*display: inline-block*/
 		}
 
 	header > nav a, header > nav a:visited {
@@ -126,14 +125,14 @@ html {
 
 
 
-/*@font-face {
+@font-face {
 	font-named-instance: "Regular";
 	font-display: swap;
 	font-family: Manrope;
 	font-style: normal;
 	font-weight: 100 900;
-	src: url(/dist/manrope-wght.woff2) format("woff2")
-}*/
+	src: url(./simple.min.css) format("woff2")
+}
 
 /*@media (prefers-color-scheme:dark) {
 	:root {
@@ -167,11 +166,18 @@ input, progress, select, textarea {
 
 
 
+p{
+	display:flex;
+}
 
-	
+div{
+	display: flex;
+}
 
 h1 {
-	font-size: 3rem
+	font-size: 3rem;
+	display:inline-block;
+	text-align: center;
 }
 
 /*h2 {
@@ -194,13 +200,10 @@ h5 {
 
 h6 {
 	font-size: .96rem
-}
+}*/
 
-h1, h2, h3, h4, h5, h6, p {
-	overflow-wrap: break-word
-}
 
-h1, h2, h3 {
+/*h1, h2, h3 {
 	line-height: 1.1
 }
 
