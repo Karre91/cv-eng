@@ -8,13 +8,11 @@
 
 
 <div>
-    <div class="background"></div>
-    <div class="foreground">
+    <div style="filter: blur(1px);"></div>
+    <div style="backdrop-filter: blur(5px);	min-height: 50px;	max-height: 100vh;">
         <p>@Html.Raw(Model.CurrentPage?.Content)</p>
-
     </div>
 </div>
-
 
 @*@Html.Raw(Markdown.ToHtml(Model.CurrentPage?.Content ?? string.Empty, Model.MarkdownPipeline))
 @await Html.PartialAsync("SingleData", Model.CurrentPage, new ViewDataDictionary(ViewData) { { "FrontendSetup", Model.ContentProperties?.FrontendSetup ?? string.Empty } })
