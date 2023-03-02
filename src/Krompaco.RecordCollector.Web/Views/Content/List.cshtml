@@ -17,10 +17,6 @@
 
 
 
-@*    <div style="filter: blur(1px); position:absolute"></div>
-    <div style="backdrop-filter: blur(5px);	min-height: 50px;	max-height: 100vh;">
-        @Html.Raw(Model.CurrentPage?.Content)
-    </div>*@
 
 <style>
     body{
@@ -31,7 +27,5 @@
     }
 </style>
 
-@*<div class="background"></div>
-<div class="foreground">*@
     @Html.Raw(Model.CurrentPage?.Content)
-@*</div>*@
+
