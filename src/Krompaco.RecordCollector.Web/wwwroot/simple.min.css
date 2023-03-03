@@ -85,64 +85,47 @@ main {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	height: 100%;
+	min-height: 90vh;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: -154px;
+}
+
+.footer-link {
+	width: 30px;
+	padding: 2%;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.flex-item1 {
+	flex: 50%;
 
 }
 
-#footer{
-	position: relative;
+.flex-item2 {
+	flex: 50%;
 }
 
-#footer-link{
-	width:30px;
-}
-
-.grid-container {
-	display: grid;
-	grid-column-start: 1;
-	grid-column-end: 2;
-}
-
-.grid-item1 {
-	display: inline-grid;
-	grid-column-start: 1;
-	grid-column-end: 1;
-	grid-row: 1 / 1;
-}
-.grid-item2 {
-	display: inline-grid;
-	grid-column-start: 2;
-	grid-column-end: 2;
-	grid-row: 1 / 1;
-}
 body>footer {
-	bottom: 0;
-	height: 2rem;
-	color: var(--text-footer);
-	font-size: .9rem;
-	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	position: relative;
-	margin-top: auto;
-	text-align: center;
-    text-decoration: none;
-    width: 100%;
-	position: absolute;
-    bottom: 0;
-    /* width: 100%; */
-    white-space: nowrap;
-    line-height: 60px;
+	margin-bottom: 195px;
 }
 
 body {
 	background-color: var(--bg);
-	/* position: relative; */
 	font-size: 1.15rem;
 	margin: 0;
-	/* display: inline; */
 	min-height: 95%;
 	max-height: 95%;
-	margin-bottom: 60px;
+	/* margin-bottom: 60px; */
 }
 
 html {
@@ -168,24 +151,23 @@ body {
 	src: url(./simple.min.css) format("woff2")
 }
 
-/*@media (prefers-color-scheme:dark) {
-	:root {
-		color-scheme: dark;
-		--bg: #212121;
-		--header-bg: #2b2b2b;
-		--text: #dcdcdc;
-		--text-header: #ababab;
-		--border: #666;
-		--accent: #ffb300;
-		--code: #f06292;
-		--preformatted: #ccc;
-		--disabled: #111
+@media only screen and (max-width:720px) {
+	main {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		height: 100%;
+		min-height: 90vh;
+		margin-bottom: 200px;
 	}
+	body {
+		background-color: var(--bg);
+		font-size: 1.15rem;
+		margin: 0;
+		min-height: 95%;
+		max-height: 95%;
 
-	img, video {
-		opacity: .8
 	}
-}*/
+}
 
 /**, ::after, ::before {
 	box-sizing: border-box
@@ -238,23 +220,7 @@ h6 {
 }*/
 
 /*
-@media only screen and (max-width:720px) {
-	h1 {
-		font-size: 2.5rem
-	}
 
-	h2 {
-		font-size: 2.1rem
-	}
-
-	h3 {
-		font-size: 1.75rem
-	}
-
-	h4 {
-		font-size: 1.25rem
-	}
-} */
 
 
 /*
