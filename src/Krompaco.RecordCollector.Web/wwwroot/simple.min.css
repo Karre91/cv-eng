@@ -159,7 +159,6 @@ body {
 		padding-right: 2rem;
 		height: 100%;
 		min-height: 90vh;
-		margin-bottom: 200px;
 	}
 	body {
 		background-color: var(--bg);
@@ -167,7 +166,11 @@ body {
 		margin: 0;
 		min-height: 95%;
 		max-height: 95%;
+		background-attachment: fixed;
 
+	}
+	body>footer {
+		margin-bottom: 100%;
 	}
 }
 
