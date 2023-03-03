@@ -99,8 +99,8 @@ main {
 	padding: 2%;
 }
 
-.flex-container {
-	display: flex;
+.flex-container  {
+	display: flex !important;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
@@ -140,9 +140,9 @@ body {
 	min-height: 100%;
 }
 
-.div{
+/* .div{
 	display: flex;
-}
+} */
 
 @font-face {
 	font-named-instance: "Regular";
