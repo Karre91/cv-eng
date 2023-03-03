@@ -140,7 +140,9 @@ body {
 	min-height: 100%;
 }
 
-
+.div{
+	display: flex;
+}
 
 @font-face {
 	font-named-instance: "Regular";
