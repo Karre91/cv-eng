@@ -94,7 +94,7 @@ main {
 	margin-bottom: -154px;
 }
 
-.footer-link {
+#footer-link {
 	width: 30px;
 	padding: 2%;
 }
@@ -106,12 +106,12 @@ main {
 }
 
 
-.flex-item1 {
+#flex-item1 {
 	flex: 50%;
 
 }
 
-.flex-item2 {
+#flex-item2 {
 	flex: 50%;
 }
 
