@@ -1,7 +1,8 @@
 ﻿@using Krompaco.RecordCollector.Content.Models
 @using Markdig
 @model SinglePageViewModel
-
+<link href="./simple.min.css" rel="stylesheet" asp-append-version="true" />
+<link href="/simple.min.css" rel="stylesheet" asp-append-version="true" />
 @section head {
     <link rel="canonical" href="@Model.ContentProperties?.SiteUrl.TrimEnd('/')@(Model.CurrentPage?.RelativeUrl)" />
 }
