@@ -91,7 +91,7 @@ main {
 #footer {
 	display: flex;
 	justify-content: center;
-	margin-bottom: -154px;
+	/* margin-bottom: -154px; */
 }
 
 .footer-link {
@@ -103,9 +103,22 @@ main {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	padding-top: 3%;
 }
 
+.flex-headline {
+	margin: auto;
+	max-height: fit-content;
+	max-width: fit-content;
+}
 
+.flex-item-middle{
+	text-align: center;
+    padding: 0 15% 5% 15%;
+}
+.flex-item-middle > p{
+	text-align: center;
+}
 .flex-item1 {
 	flex: 50%;
 
@@ -116,7 +129,7 @@ main {
 }
 
 body>footer {
-	margin-bottom: 195px;
+	/* margin-bottom: 195px; */
 }
 
 body {
@@ -159,13 +172,17 @@ body {
 		min-height: 90vh;
 		margin-bottom: 200px;
 	}
+
 	body {
 		background-color: var(--bg);
 		font-size: 1.15rem;
 		margin: 0;
 		min-height: 95%;
 		max-height: 95%;
-
+	}
+	.flex-item-middle{
+		text-align: center;
+		padding-bottom: 3%;
 	}
 }
 
