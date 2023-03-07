@@ -42,10 +42,7 @@ header>nav ul {
 	padding: 0
 }
 
-header>nav ol li,
-header>nav ul li {
-	/*display: inline-block*/
-}
+
 
 header>nav a,
 header>nav a:visited {
@@ -69,6 +66,7 @@ body>header {
 	background-color: var(--header-bg);
 	border-bottom: 1px solid var(--border);
 	text-align: center;
+	margin-top: 110px;
 }
 
 body>header h1 {
@@ -84,14 +82,11 @@ body>header p {
 main {
 	padding-left: 2rem;
 	padding-right: 2rem;
-	height: 100%;
-	min-height: 90vh;
 }
 
 #footer {
 	display: flex;
 	justify-content: center;
-	/* margin-bottom: -154px; */
 }
 
 .footer-link {
@@ -129,7 +124,7 @@ main {
 }
 
 body>footer {
-	 margin-bottom: 5%; 
+	 margin-bottom: 5%;
 }
 
 body {
