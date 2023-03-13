@@ -107,13 +107,15 @@ main {
 	max-width: fit-content;
 }
 
-.flex-item-middle{
+.flex-item-middle {
 	text-align: center;
-    padding: 0 15% 5% 15%;
+	padding: 0 15% 5% 15%;
 }
-.flex-item-middle > p{
+
+#flex-item-middle>p {
 	text-align: center;
 }
+
 .flex-item1 {
 	flex: 50%;
 
@@ -124,7 +126,7 @@ main {
 }
 
 body>footer {
-	 margin-bottom: 5%;
+	margin-bottom: 5%;
 }
 
 body {
@@ -148,7 +150,10 @@ body {
 	min-height: 100%;
 }
 
-
+#hobbies {
+	display: flex;
+	padding-left: 10%;
+}
 
 @font-face {
 	font-named-instance: "Regular";
@@ -175,7 +180,8 @@ body {
 		min-height: 95%;
 		max-height: 95%;
 	}
-	.flex-item-middle{
+
+	.flex-item-middle {
 		text-align: center;
 		padding-bottom: 3%;
 	}
